@@ -1,0 +1,1 @@
+# NoOpTrace + Singleton pattern, check the __new__ 
