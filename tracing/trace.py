@@ -1,6 +1,6 @@
 import abc
 from types import TracebackType
-from typing import Self
+from typing import Any, Self
 
 from tracing.types import TraceExport
 
@@ -36,4 +36,8 @@ class Trace(abc.ABC):
     @property
     @abc.abstractmethod
     def trace_id(self) -> str: ...
+
+    @property
+    @abc.abstractmethod
+    def metadata(self) -> dict[str, Any]: ...
 
