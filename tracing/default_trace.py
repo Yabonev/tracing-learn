@@ -1,0 +1,1 @@
+# The Trace class implementation, care about __slots__
